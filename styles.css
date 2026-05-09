@@ -1,0 +1,329 @@
+p{
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.body {
+	width: 80%;
+	background: #2A2C2F ;
+	margin: auto;
+	color: white;
+	font-family: "Inter", sans-serif;
+}
+
+.header{
+	height: 52px;
+	margin: auto;
+	margin-top: 28px;
+	margin-bottom: 56px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main{
+	width: 95%;
+	margin: auto;
+}
+
+.main-title{
+	font-size: 96px;
+	font-weight: 900;
+	line-height: 100px;
+	font-size: clamp(1.875rem, 1.05rem + 4.125vw, 6rem);
+	margin: auto;
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+.main-text{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	font-size: clamp(1rem, 0.825rem + 0.875vw, 1.875rem);
+	margin: auto;
+	margin-bottom: 5%;
+}
+
+.main-image{
+	width: 80%;
+	margin-left: 10%;
+}
+
+.main-minitext{
+	font-weight: 300;
+	line-height: 14px;
+	font-size: 10px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	margin: 0;
+	margin-top: 8px;
+}
+
+.about{
+	margin: auto;
+	margin-top: 92px;
+	margin-bottom: 92px;
+}
+
+.about-title{
+	font-size: clamp(2rem, 1.5417rem + 2.2917vw, 3.375rem);
+	line-height: 58px;
+	margin-top: 0;
+	font-weight: 900;
+}
+
+.about-text{
+	line-height: 163%;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.about-minitext{
+	font-size: 12px;
+	line-height: 18px;
+	margin-top: 35px;
+	font-weight: 700;
+}
+
+.numbers{
+	font-weight: 400;
+}
+
+.gallery{
+	margin: auto;
+	display: grid;
+	gap: 16px;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr))
+}
+
+.gallery-image{
+	width: 100%;
+	height: 100%;
+}
+
+.places{
+	margin: auto;
+	margin-bottom: 92px;
+}
+
+.place{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 80px;
+	gap: 20px;
+}
+
+.place-title{
+	font-size: clamp(2rem, 1.5rem + 2.5vw, 4.5rem);
+	font-weight: 900;
+	line-height: 76px;
+	color: #FFFFFF;
+	margin: 0;
+	margin-bottom: 48px;
+}
+
+.place-image{
+	width: 35vw;
+}
+
+.place-hint{
+	font-size: 12px;
+	font-weight: 400 ;
+	line-height: 12px ;
+	color: #AAAAAA ;
+	letter-spacing: 2px;
+	margin: 0;
+	margin-top: 106px;
+	margin-bottom: 12px;
+}
+
+.place-link{
+	font-size: 18px;
+	font-weight: 400 ;
+	line-height: 22px ;
+	color: #FFFFFF ;
+	margin: 0;
+}
+
+.place-text{
+	font-weight: 400;
+	line-height: 163%;
+	color: #FFFFFF ;
+	margin: 0;
+	margin-top: 38px;
+}
+
+.baikal{
+	width: 100%;
+	height: 70vh;
+	margin: auto;
+	background: url(img2.png);
+	filter: ;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+}
+
+.baikal-title{
+	font-size: clamp(2rem, 1.275rem + 3.625vw, 5.625rem);
+	margin: 0;
+	font-weight: 900;
+	line-height: 76px;
+	z-index: 2;
+	position: relative;
+	margin-bottom: 32px ;
+	text-align: center;
+}
+
+.baikal-text{
+	font-size: clamp(0.875rem, 0.7917rem + 0.4167vw, 1.125rem);
+	font-weight: 400;
+	line-height: 22px;
+	z-index: 2;
+	position: relative;
+    width: 360px;
+    margin: 0;
+    text-align: center;
+}
+
+.overlay{
+	width: 100%;
+	height: 100%;
+	background: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.25;
+	z-index: 1;
+	transition: 2s;
+}
+
+.baikal:hover .overlay{
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.footer{
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 92px;
+	margin-bottom: 50px;
+}
+
+.footer-lincs{
+	line-height: 18px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.avt{
+	line-height: 16px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+@media (max-width: 1280px) {
+
+	.baikal{
+		height: 50vh;
+	}
+
+}
+
+@media (max-width: 1024px) {
+
+	.place-hint{
+		margin-top: 0;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.main-title{
+		line-height: 44px;
+	}
+
+	.main-text{
+		line-height: 20px;
+	}
+
+	.about{
+		margin-bottom: 64px;
+	}
+
+	.about-title{
+		line-height: 35px;
+	}
+
+	.place{
+		flex-direction: column;
+
+	}
+
+	.place-image{
+		width: 100%;
+	}
+
+	.baikal{
+		height: 30vh;
+	}
+
+	.baikal-title{
+		line-height: 35px;
+	}
+
+	.baikal-text{
+		line-height: 16px;
+	}
+
+	.footer{
+		flex-direction: column;
+		margin-left: 16px;
+	}
+
+	.footer-lincs{
+		display: flex;
+		flex-direction: column;
+		line-height: 24px;
+		font-size: 24px;
+		font-weight: 400;
+	}
+
+	.avt{
+		line-height: 14px;
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	.footer-linc{
+		margin-bottom: 32px;
+
+	}
+
+	.place-title{
+		line-height: 35px;
+	}
+
+}
+
+@media (max-width: 320px) {
+
+
+}
+
+
+
